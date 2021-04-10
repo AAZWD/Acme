@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="acmeSolutions.css">
+		<!--[if IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="Images/favicon.ico">
+
+	</head>
+	<body>
+		<nav style="z-index:99">
+			<a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+			<form>
+				<input type="text" name="siteSearch" id="siteSearch" placeholder="Search...">
+			</form>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li class="dropdown"><a href="javascript:void(0);">Research</a>
+					<ul class="dropLinks">
+						<li><a href="Research/publications.html">&#8250; Publications</a></li>
+						<li><a href="Research/Rhinotillexomania.html">&#8250; Rhinotillexomania</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="javascript:void(0);">Investment</a>
+					<ul class="dropLinks">
+						<li><a href="Business/proposal.html">&#8250; Offering Memorandum</a></li>
+						<li><a href="Business/apply.html">&#8250; Investment Application</a></li>
+					</ul>
+				</li>
+				<li><a id="active" href="contact.html">Contact</a></li>
+			</ul>
+			<div id="translate">
+				<a href="https://en.wikipedia.org/wiki/Chinese_language" lang="zh-Hans">中文</a>
+				<a href="https://en.wikipedia.org/wiki/Spanish_language" lang="es">Español</a>
+				<a href="https://en.wikipedia.org/wiki/French_language" lang="fr">Français</a>
+			</div>
+		</nav>
+		<header>
+			<h1 id="other">Contact Us</h1>
+		</header>
+			<main>
+				<!--Title: Adding a Google Map with a Marker to Your Website
+				Author: Gogle Developers
+				Date: 2017-04-01
+				Last Updated: March 14, 2017 (In lieu of Code version)
+				Type: HTML and JavaScript
+				Availability: https://developers.google.com/maps/documentation/javascript/adding-a-google-map-->
+				<div id="map" >
+					<script>
+						function initMap() {
+							let here = {lat: 49.2734, lng:-123.1038};
+							let map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: here});
+							let marker = new google.maps.Marker({position: here, map: map});
+						}
+					</script>
+					<script async defer
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvnO0e2XNej5MH6pHI6_vh7d802t8UkTc&callback=initMap">
+					</script>
+				</div>
+				<h2>Reach Us At:</h2>
+				<div class="contactIcon"><img src="Images/Icons/location.png" alt="location icon">1455 Quebec St, Vancouver, BC V6A 3Z7</div>
+				<div class="contactIcon">
+					<img src="Images/Icons/phone.png" alt="phone icon">
+					<span id="desktop">1-888-555-5555</span>
+				<a id="mobile" href="tel:555-555-5555">555-555-5555</a></div>
+				<div class="contactIcon"><img src="Images/Icons/email.png" alt="email icon"><a href="mailto:acme@pharma.com"><strong>acme@pharma.com</strong></a></div>
+				<div class="contactIcon"><img src="Images/Icons/fax.png" alt="fax icon">555-555-5551</div>
+				<h2>Contact Form:</h2>
+				<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+					<input type="text" name="yourName" id="yourName" placeholder="Name" required>
+					<input type="email" name="yourEmail" id="yourEmail" placeholder="Email" required>
+					<textarea name="message" id="message" rows="10" cols="40" placeholder="Message" required></textarea>
+					<input id="Submit" type="submit" value="Send">
+				</form>
+			</main>
+			<hr>
+			<footer>
+				<div id="blurb">
+					<strong>The Company:</strong><br>
+					Acme Solutions is a Canadian owned and operated biotechnology company 
+					specializing in the development of pharmaceutical drugs
+					for the treatment of rhinotillexomania.
+					<br>
+				</div>
+				<div id="copy">Copyright &copy; 2017 Acme Solutions Inc.- Designed by <span id="me">A.Z</span>
+					<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+				</div>
+			</footer>
+	</body>
+</html>	

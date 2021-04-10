@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Investment Application</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../acmeSolutions.css">
+		<!--[if IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="../Images/favicon.ico">
+
+	</head>
+	<body>
+		<nav>
+			<a href="../index.html"><img src="../Images/logo.png" alt="logo"></a>
+			<form>
+				<input type="text" name="siteSearch" id="siteSearch" placeholder="Search...">
+			</form>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About Us</a></li>
+				<li class="dropdown"><a href="javascript:void(0);">Research</a>
+					<ul class="dropLinks">
+						<li><a href="../Research/publications.html">&#8250; Publications</a></li>
+						<li><a href="../Research/Rhinotillexomania.html">&#8250; Rhinotillexomania</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a id="active" href="javascript:void(0);">Investment</a>
+					<ul class="dropLinks">
+						<li><a href="proposal.html">&#8250; Offering Memorandum</a></li>
+						<li><a href="apply.html">&#8250; Investment Application</a></li>
+					</ul>
+				</li>
+				<li><a href="../contact.html">Contact</a></li>
+			</ul>
+			<div id="translate">
+				<a href="https://en.wikipedia.org/wiki/Chinese_language" lang="zh-Hans">中文</a>
+				<a href="https://en.wikipedia.org/wiki/Spanish_language" lang="es">Español</a>
+				<a href="https://en.wikipedia.org/wiki/French_language" lang="fr">Français</a>
+			</div>
+		</nav>
+		<header>
+			<h1 id="other">Investment Application</h1>
+		</header>
+			<main>
+				<h2>Offering Memorandum Request:</h2>
+				<div class="content">
+					If you are interested in investing in Acme Solutions, or would like furter information about our <a href="proposal.html" style="text-decoration:none;"><span style="color: #36a334">Offering Memorandum</span></a>
+					please fill out an application form, so thay we may send you the official and completer offering memorandum document.<br><br>
+					Please ensure that the application is complete in accordance with the set requirements so that you may receive the documents without delay.
+				</div>
+				<form method="post" action="http://webdevbasics.net/scripts/demo.php">
+					<input class="apply1" type="text" name="yourName" id="yourName" placeholder="Name of Applicant" required>
+					<input class="apply1" type="text" name="busName" id="busName" placeholder="Name of Business" required>					
+					<input class="apply1" type="text" name="street" id="street" placeholder="Street Address">										
+					<input class="apply1" type="text" name="city" id="city" placeholder="City">										
+					<input class="apply1" type="text" name="country" id="country" placeholder="Country" required>										
+					<input class="apply1" type="text" name="zpcode" id="zpcode" placeholder="Postal/ZIP Code">										
+					<input class="apply1" type="email" name="yourEmail" id="yourEmail" placeholder="Email" required>
+					<input class="apply1" type="text" name="yourNumber" id="yourNumber" placeholder="Phone Number" required>					
+					<fieldset><legend>List three references with whom you have had previous business dealings with:</legend>
+						<input type="text" name="ref" id="ref" placeholder="Name" required>
+						<input type="text" name="emailRef" id="emailRef" placeholder="Email">
+						<input type="text" name="numRef" id="numRef" placeholder="Number"><br>
+						<input type="text" name="ref2" id="ref2" placeholder="Name">
+						<input type="text" name="emailRef2" id="emailRef2" placeholder="Email">
+						<input type="text" name="numRef2" id="numRef2" placeholder="Number"><br>
+						<input type="text" name="ref3" id="ref3" placeholder="Name">
+						<input type="text" name="emailRef3" id="emailRef3" placeholder="Email">
+						<input type="text" name="numRef3" id="numRef3" placeholder="Number"><br>
+					</fieldset><br>
+					<fieldset><legend>Confirmation</legend>
+						I hereby agree that the contents of this application are true to the best of my knowledge as of the date submitted<br>
+						<input type="radio" name="agree" id="agree" required>
+						<label for="agree">Agree</label>			
+					</fieldset>
+					<input id="Submit" type="submit" value="Send">
+					<input id="Reset" type="reset" value="Reset">
+				</form>
+			</main>
+			<hr>
+			<footer>
+				<div id="blurb">
+					<strong>The Company:</strong><br>
+					Acme Solutions is a Canadian owned and operated biotechnology company 
+					specializing in the development of pharmaceutical drugs
+					for the treatment of rhinotillexomania.
+					<br>
+				</div>
+				<div id="copy">Copyright &copy; 2017 Acme Solutions Inc.- Designed by <span id="me">A.Z</span></div>
+			</footer>
+	</body>
+</html>

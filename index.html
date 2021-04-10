@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Acme Solutions</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="acmeSolutions.css">
+		<!--[if IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="Images/favicon.ico">
+
+	</head>
+	<body>
+		<nav>
+			<a href="index.html"><img src="Images/logo.png" alt="logo"></a>
+			<form>
+				<input type="text" name="siteSearch" id="siteSearch" placeholder="Search...">
+			</form>
+			<ul>
+				<li><a id="active" href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li class="dropdown"><a href="javascript:void(0);">Research</a>
+					<ul class="dropLinks">
+						<li><a href="Research/publications.html">&#8250; Publications</a></li>
+						<li><a href="Research/Rhinotillexomania.html">&#8250; Rhinotillexomania</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="javascript:void(0);">Investment</a>
+					<ul class="dropLinks">
+						<li><a href="Business/proposal.html">&#8250; Offering Memorandum</a></li>
+						<li><a href="Business/apply.html">&#8250; Investment Application</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div id="translate">
+				<a href="https://en.wikipedia.org/wiki/Chinese_language" lang="zh-Hans">中文</a>
+				<a href="https://en.wikipedia.org/wiki/Spanish_language" lang="es">Español</a>
+				<a href="https://en.wikipedia.org/wiki/French_language" lang="fr">Français</a>
+			</div>
+		</nav>
+		<header>
+			<span id="slogan" style="visibility:hidden;"><em>Clinically proven to be the last thing you pick, your physician knows to recommend VPL</em>&#8482;.</span>
+			<h1 id="title" style="visibility:hidden;">Acme Solutions</h1>
+		</header>
+			<main>
+				<div id="slideShow">
+					<div id="welcome" style="display:block;" onclick="automatic(); start();"> Welcome</div>
+					<div id="description" style="visibility:hidden;">Derived from Cynareae Cirsium VPL is a therapeutic product for the treatment of rhinotillexomania.</div>
+					<img src="Images/Icons/next.png" id="next" alt="next image arrow" style="visibility:hidden;" onclick="automatic();">
+					<img src="Images/SlideShow/white.png" id="slideImage" alt="slide show" style="visibility:hidden;">
+					<div id= "cite" style="visibility:hidden;">Photo courtesy of <span><a href="https://www.flickr.com/creativecommons">Flickr Creative Commons</a></span></div>
+				</div>
+				<div id="awardLogos">
+					<img src="Images/Awards/farbes.png" alt="Farbes Award">
+					<img src="Images/Awards/mossey.png" alt="Mossey Lectures">
+					<img src="Images/Awards/nopel.png" alt="Nopel Prize">
+					<img src="Images/Awards/van.png" alt="Van Award">
+				</div>
+			</main>
+			<script type="text/javascript" src="acmeJS.js" ></script>
+	</body>
+</html>	
