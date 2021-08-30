@@ -7,6 +7,6 @@ An informational site for Acme Solutions, a fictional pharmaceutical company loo
 General public
 
 ## Technologies
-Javascript (vanilla)  
+JavaScript (vanilla)  
 CSS  
 HTML  
